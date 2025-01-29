@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="474.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RoomInformationsController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="473.0" prefWidth="698.0">
+         <children>
+            <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="474.0" prefWidth="350.0">
+               <children>
+                  <AnchorPane prefHeight="461.0" prefWidth="350.0">
+                     <children>
+                        <ImageView fx:id="roomImage" fitHeight="200.0" fitWidth="300.0" layoutX="25.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" />
+                        <Button layoutX="91.0" layoutY="308.0" mnemonicParsing="false" onAction="#bookRoom" prefHeight="36.0" prefWidth="168.0" style="-fx-background-color: #32cd32; -fx-cursor: hand;" text="Book Now" textAlignment="CENTER" textFill="#333333">
+                           <font>
+                              <Font name="Gill Sans MT Bold" size="16.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="97.0" layoutY="311.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/reservation.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="view" layoutX="310.0" layoutY="236.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="15.0" prefWidth="15.0" style="-fx-cursor: hand;">
+                           <graphic>
+                              <ImageView>
+                                 <image>
+                                    <Image url="@../icons/eye.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <VBox layoutX="350.0" layoutY="-3.0" prefHeight="474.0" prefWidth="347.0" style="-fx-background-color: #d8ecfd;">
+               <children>
+                  <AnchorPane prefHeight="561.0" prefWidth="347.0">
+                     <children>
+                        <Label fx:id="room" layoutX="90.0" layoutY="37.0" prefHeight="19.0" prefWidth="167.0" style="-fx-alignment: center; -fx-background-color: #ffda03;" text="Label" textFill="#11055e">
+                           <font>
+                              <Font name="Lucida Calligraphy Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="type" layoutX="109.0" layoutY="73.0" prefHeight="23.0" prefWidth="130.0" style="-fx-alignment: center; -fx-background-color: #ffda03;" textAlignment="CENTER" textFill="#11055e">
+                           <font>
+                              <Font name="Lucida Calligraphy Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="floorLabel" layoutX="108.0" layoutY="105.0" prefHeight="22.0" prefWidth="130.0" style="-fx-alignment: center; -fx-background-color: #ffda03;" text="Label" textAlignment="CENTER" textFill="#11055e">
+                           <font>
+                              <Font name="Lucida Calligraphy Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="price" layoutX="47.0" layoutY="181.0" prefHeight="19.0" prefWidth="167.0" text="Label" textFill="#11055e">
+                           <font>
+                              <Font name="Lucida Calligraphy Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="47.0" layoutY="214.0" prefHeight="19.0" prefWidth="167.0" text="Description : " textFill="#11055e">
+                           <font>
+                              <Font name="Lucida Calligraphy Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Text fx:id="description" layoutX="112.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="174.13671875">
+                           <font>
+                              <Font name="Gill Sans MT" size="14.0" />
+                           </font>
+                        </Text>
+                        <Label fx:id="state" layoutX="47.0" layoutY="144.0" text="Label">
+                           <font>
+                              <Font name="Lucida Calligraphy Italic" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

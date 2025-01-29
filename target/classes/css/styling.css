@@ -1,0 +1,23 @@
+.button {
+    -fx-background-color: #F2F2F2;
+    -fx-background-radius: 0em;
+    -fx-cursor: hand;
+    -fx-font-family: "Lucida Calligraphy";
+    -fx-font-size: 15.0;
+    -fx-font-style: italic;
+}
+
+.button:hover {
+    -fx-background-color: #03937F;
+}
+
+.button:pressed {
+    -fx-background-color: #165D8B;
+    -fx-background-radius: 5em;
+}
+
+.button:focused {
+    -fx-background-color: #165D8B;
+    -fx-border-color: #165D8B;
+    -fx-background-radius: 5em;
+}
